@@ -41,7 +41,61 @@
 *::before,
 *::after {
   box-sizing: border-box;
+  /*margin-right: 10%;*/
+  /*margin-top: 20px;*/
 }
+/*.albumForm{*/
+/*  */
+/*}*/
+
+input[type=text] {
+  width: 50%;
+  padding: 12px 20px;
+  /*margin: 8px 0;*/
+  margin-top: 8px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.title{
+  margin-left: 3.5%;
+}
+.image{
+  margin-left: 1%;
+}
+.duration{
+  margin-left: 1.25%;
+}
+.artist{
+  margin-left: 2.5%;
+}
+
+/*input[type=submit] {*/
+/*  width: 50%;*/
+/*  background-color: #4CAF50;*/
+/*  color: white;*/
+/*  padding: 14px 20px;*/
+/*  !*margin: 8px 0;*!*/
+/*  border: none;*/
+/*  border-radius: 4px;*/
+/*  cursor: pointer;*/
+/*}*/
+
+input[type=submit]:hover {
+  background-color: #181a18;
+}
+.albumSubmit{
+  position: relative;
+  width: 30%;
+  margin-left: 40%;
+}
+
+/*div {*/
+/*  border-radius: 5px;*/
+/*  background-color: #f2f2f2;*/
+/*  padding: 20px;*/
+/*}*/
 
 @media (prefers-reduced-motion: no-preference) {
   :root {
@@ -355,6 +409,13 @@ button:not(:disabled),
 [type=reset]:not(:disabled),
 [type=submit]:not(:disabled) {
   cursor: pointer;
+  margin-left: 43%;
+  margin-top: 20px;
+  background-color: #c1535d;
+}
+.aTag{
+  color: white;
+  /*margin-left: 43%;*/
 }
 
 ::-moz-focus-inner {
@@ -594,6 +655,13 @@ progress {
   color: #6c757d;
 }
 
+.titleSong{
+  margin-left: 2%;
+}
+.album{
+  margin-left: 1%;
+}
+
 .container,
 .container-fluid,
 .container-xxl,
@@ -601,11 +669,12 @@ progress {
 .container-lg,
 .container-md,
 .container-sm {
+  margin-top: 20px;
   width: 100%;
   padding-right: var(--bs-gutter-x, 0.75rem);
   padding-left: var(--bs-gutter-x, 0.75rem);
   margin-right: auto;
-  margin-left: auto;
+  margin-left: 100px;
 }
 
 @media (min-width: 576px) {
@@ -632,6 +701,10 @@ progress {
   .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container {
     max-width: 1320px;
   }
+}
+
+.songButton{
+  margin-right: 50%;
 }
 .row {
   --bs-gutter-x: 1.5rem;
@@ -4199,7 +4272,7 @@ textarea.form-control-lg {
 }
 
 .navbar-light .navbar-brand {
-  color: rgba(0, 0, 0, 0.9);
+  color: rgba(106, 104, 104, 0.9);
 }
 .navbar-light .navbar-brand:hover, .navbar-light .navbar-brand:focus {
   color: rgba(0, 0, 0, 0.9);
@@ -7430,7 +7503,7 @@ textarea.form-control-lg {
 }
 
 .bg-light {
-  background-color: #f8f9fa !important;
+  background-color: rgba(241, 10, 6, 0.05) !important;
 }
 
 .bg-dark {
@@ -10875,12 +10948,16 @@ header.masthead {
 header.masthead:before {
   content: "";
   position: absolute;
-  background-color: #1c375e;
+  /*background-color: #1c375e;*/
+  background-image: url("image4.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
   height: 100%;
   width: 100%;
   top: 0;
   left: 0;
-  opacity: 0.5;
+  height: 110%;
+  /*opacity: 0.9;*/
 }
 header.masthead h1, header.masthead .h1 {
   font-size: 2rem;

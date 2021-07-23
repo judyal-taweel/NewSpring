@@ -18,16 +18,16 @@ public class AlbumController {
     private AlbumRepository albumRepository;
     @Autowired
     private SongRepository songRepository;
-    @GetMapping("/")
-    public String getAllAlbum(Model model){
-        Album albumModel1 = new Album("Moonlight","maichle","5:30","https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.RMdFUfNe1i78pwWbJg81KAHaHa%26pid%3DApi&f=1",7);
-        Album albumModel2 = new Album("Spring","jones","6:02","https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.mJ4hrNKMi7lHaXdcbkVwiAHaHa%26pid%3DApi&f=1",6);
-        Album albumModel3 = new Album("Sun Raise","john","4:15","https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.BIlkqO504KYHLj__I7ufQgHaHa%26pid%3DApi&f=1",15);
-        List albumModels = Arrays.asList(new Album[]{albumModel1, albumModel2, albumModel3});
-        albumRepository.saveAll(albumModels);
-        model.addAttribute("albums", albumRepository.findAll());
-        return "index";
-    }
+//    @GetMapping("/")
+//    public String getAllAlbum(Model model){
+//        Album albumModel1 = new Album("Moonlight","maichle","5:30","https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.RMdFUfNe1i78pwWbJg81KAHaHa%26pid%3DApi&f=1",7);
+//        Album albumModel2 = new Album("Spring","jones","6:02","https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.mJ4hrNKMi7lHaXdcbkVwiAHaHa%26pid%3DApi&f=1",6);
+//        Album albumModel3 = new Album("Sun Raise","john","4:15","https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.BIlkqO504KYHLj__I7ufQgHaHa%26pid%3DApi&f=1",15);
+//        List albumModels = Arrays.asList(new Album[]{albumModel1, albumModel2, albumModel3});
+//        albumRepository.saveAll(albumModels);
+//        model.addAttribute("albums", albumRepository.findAll());
+//        return "index";
+//    }
     @GetMapping("/albums")
     public String getalbum(Model model){
 

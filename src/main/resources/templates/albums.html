@@ -42,25 +42,25 @@
             </div>
         </div>
 
-        <form action="#" th:action="@{/albums}" method="post" >
+        <form class="albumForm" action="#" th:action="@{/albums}" method="post" >
             <!--              <p>artist:<input type="text" th:field="*{albumModel.artist}"/></p>-->
 
             <label>Title:</label>
-            <input type="text" name="album_title" placeholder="" required />
+            <input class="title" type="text" name="album_title" placeholder="" required />
             <br>
             <label>Image Url:</label>
-            <input type="text" name="album_img"  placeholder="" required />
+            <input class="image" type="text" name="album_img"  placeholder="" required />
             <br>
             <label>Duration:</label>
-            <input type="text" name="album_length"  placeholder="" required />
+            <input class="duration" type="text" name="album_length"  placeholder="" required />
             <br>
             <label>Song Count:</label>
-            <input type="text" name="album_duration"  placeholder="" required />
+            <input class="count" type="text" name="album_duration"  placeholder="" required />
             <br>
             <label>Artist:</label>
-            <input type="text" name="album_artist"  placeholder="" required />
+            <input class="artist" type="text" name="album_artist"  placeholder="" required />
 
-            <input type="submit" value="submit"/>
+            <input class="albumSubmit" type="submit" value="submit"/>
 
         </form>
         <!-- -->

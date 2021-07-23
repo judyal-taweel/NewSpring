@@ -5,6 +5,7 @@ import com.Relation.SpringJpaRelation.Songs.Song;
 import org.springframework.data.repository.cdi.Eager;
 
 import javax.persistence.*;
+import java.io.IOException;
 
 @Entity
 public class Song {
@@ -45,4 +46,7 @@ public class Song {
     public void setSong_length(int song_length) {
         this.song_length = song_length;
     }
-}
+
+    public void jsonSongs() throws IOException {
+    }
+    }

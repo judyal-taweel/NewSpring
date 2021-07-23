@@ -69,6 +69,9 @@
     </div>
   </div>
 </section>
+
+<button><a class="aTag" th:href="@{/albums}" > Add your Album</a></button>
+
 <div class="container-fluid p-0">
   <div th:each="album : ${albums}">
     <div class="row g-0">
@@ -82,7 +85,6 @@
       </div>
     </div>
   </div>
-  <a th:href="@{/albums}" > Add your Album</a>
 
   <footer class="footer bg-light">
     <div class="container">
